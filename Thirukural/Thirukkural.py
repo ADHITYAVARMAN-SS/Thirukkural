@@ -4,7 +4,7 @@ import speech_recognition as sr
 from tkinter import *
 from PIL import Image, ImageTk
 
-elevenlabs.set_api_key("3c0661f85eb009878971e0f40c128366")
+elevenlabs.set_api_key("YOUR-API-KEY")
 
 def speech_to_text():
   recognizer = sr.Recognizer()
@@ -33,7 +33,7 @@ def speech_to_text():
 
 def searching(text):
   #Reading File
-  df = pd.read_csv("D:\pythonFlask\Thirukural\Thirukural.csv")
+  df = pd.read_csv("csv file path")
 
   #Slicing Kural from Dataframe
   verses = df['Verse']
@@ -101,16 +101,16 @@ root.title("Thirukkural App")
 root.geometry("450x400")
  
 # Open image path
-image = Image.open("D:\pythonFlask\Thirukural\mic.jpg") 
+image = Image.open("Image path") 
 
 image = image.resize((50, 50))  # resize image
 photo = ImageTk.PhotoImage(image)
 
-image2 = Image.open("D:\pythonFlask\Thirukural\Thiruvalluvar.jpg")
+image2 = Image.open("Image path")
 image2 = image2.resize((150,200))
 photo2 = ImageTk.PhotoImage(image2)
 
-image3 = ImageTk.PhotoImage(Image.open("D:\pythonFlask\Thirukural\TiruBG.jpg"))
+image3 = ImageTk.PhotoImage(Image.open("Image path"))
 label = Label(root, image = image3).place(x=0,y=0)
 # creating button
 wlecome = Label(root, text = "Speech Recoginition").place(x=150,y=10)
