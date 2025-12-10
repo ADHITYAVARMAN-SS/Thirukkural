@@ -23,10 +23,6 @@ It integrates speech recognition, NLP-based text matching, and a graphical user 
 - NLP-based text matching
 - Multilingual text-to-speech synthesis
 
-## How to Run
-1. Install dependencies listed in `requirements.txt`
-2. Set API key via environment variable
-3. Run `Thirukkural.py`
 
 ## Notes
 API keys and file paths are excluded for security and portability reasons.
